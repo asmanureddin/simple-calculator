@@ -1,0 +1,157 @@
+
+body{
+    padding: 1rem;
+    padding-top: 0;
+    margin: 1em;
+}
+
+h1{
+    font-family: 'Advent Pro' ;
+    font-size: 2em;
+    font-weight: 2;
+    padding-left: 0.5em;
+}
+
+
+.calc-grid{
+    width: 16rem;
+    padding: 1rem;
+    background-color: rgb(129, 112, 190);
+    display: grid;
+    grid-template-areas:
+    "result result result result" 
+    "top top top op"
+    "ns ns ns op"
+    "ns ns ns op"
+    "ns ns ns op"
+    "bot bot bot bot"
+    ;
+    justify-content: baseline;
+    text-align: center;
+    border-radius: 2em;
+    justify-content: center;
+    
+}
+
+.res-sec{
+    grid-area: result;
+    background-color: rgb(9, 0, 94);
+    margin: 0.5em;
+    padding-top: 2em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+    justify-content: right;
+    text-align: right;
+    color: white;
+    height: 3rem;
+    border-radius: 0.5em;
+    font-size: 1.5em;
+}
+
+.top-calc{
+    grid-area: top;
+    display: grid;
+    grid-template-areas: "ac del perc";
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+.top-calc>button{
+    background-color: rgb(186, 201, 243);
+    padding: 1em;
+    margin: 0.2em;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 0.5em;
+}
+
+.top-calc>button:hover{
+    background-color: rgb(220, 230, 255);
+}
+
+.num-sec{
+    grid-area: ns;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr );
+    
+}
+.num-buttons{
+    background-color: rgb(185, 169, 241);
+    padding: 1em;
+    margin: 0.2em;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 0.5em;
+}
+
+.num-buttons:hover{
+    background-color: rgb(220, 210, 255);
+}
+
+.operations-sec{
+    grid-area: op;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.operations-sec>button{
+    background-color: rgb(186, 201, 243);
+    padding: 1em;
+    margin: 0.2em;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 0.5em;
+}
+
+.operations-sec>button:hover{
+    background-color: rgb(220, 230, 255);
+}
+
+.bottom-calc{
+    grid-area: bot;
+    display: grid;
+    grid-template-columns: 4;
+    grid-template-areas: 
+    "dot zero . equall";
+    grid-template-columns: 1fr 1fr 1.8fr;
+    
+}
+.bottom-calc>button{
+    background-color: rgb(185, 169, 241);
+    padding: 1em;
+    margin: 0.2em;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 0.5em;
+}
+
+.bottom-calc>button:hover{
+    background-color: rgb(220, 210, 255);
+}
+
+#equal{
+    background-color: rgb(255, 227, 192);
+}
+#equal:hover{
+    background-color: rgb(255, 196, 118);
+}
+
+#del{
+    background-color: rgb(255, 193, 193);
+}
+#del:hover{
+    background-color: rgb(255, 142, 142);
+}
+
+#ac {
+    background-color: rgb(177, 224, 180);
+}
+#ac:hover{
+    background-color: rgb(106, 194, 112);
+}
+
+
